@@ -4,6 +4,10 @@
   "description": "Tehila Jewelry App",
   "main": "server.js",
   "type": "module",
+  "engines": {
+    "node": "0.12.x",
+    "npm": "2.5.x"
+  },
   "scripts": {
     "start": "node backend/server",
     "server": "nodemon server",
