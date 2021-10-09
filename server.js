@@ -17,7 +17,7 @@ dotenv.config()
 connectDB()
 
 app.use(cors({
-  origin: 'https://tehilafrontendapp.herokuapp.com'
+  origin: '*'
 }));
 if (process.env.NODE_ENV === 'development') {
   app.use(morgan('dev'))
