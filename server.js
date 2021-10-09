@@ -18,7 +18,7 @@ connectDB()
 
 const app = express()
 app.use(cors({
-  origin: '*'
+  accessControlAllowOrigin: 'https://tehilafrontendapp.herokuapp.com/'
 }));
 if (process.env.NODE_ENV === 'development') {
   app.use(morgan('dev'))
