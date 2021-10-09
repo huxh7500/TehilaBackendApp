@@ -16,8 +16,8 @@ import uploadRoutes from './routes/uploadRouts.js'
 dotenv.config()
 connectDB()
 
-var allowedOrigins = ['http://localhost:3000',
-                      'https://tehilafrontendapp.herokuapp.com'];
+const allowedOrigins = ['localhost:3000',
+                      'tehilafrontendapp.herokuapp.com'];
 app.use(cors({
   origin: function(origin, callback){
     // allow requests with no origin 
