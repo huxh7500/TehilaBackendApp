@@ -13,6 +13,8 @@ import userRoutes from './routes/userRoutes.js'
 import orderRoutes from './routes/orderRoutes.js'
 import uploadRoutes from './routes/uploadRouts.js'
 
+const app = express()
+
 dotenv.config()
 connectDB()
 
