@@ -9,7 +9,6 @@
     "npm": "2.5.x"
   },
   "scripts": {
-    "start": "node backend/server",
     "server": "nodemon server",
     "data:import": "node backend/seeder",
     "data:destroy": "node backend/seeder -d"
