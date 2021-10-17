@@ -9,6 +9,7 @@
     "npm": "2.5.x"
   },
   "scripts": {
+    "start": "node server",
     "server": "nodemon server",
     "data:import": "node backend/seeder",
     "data:destroy": "node backend/seeder -d"
@@ -29,7 +30,7 @@
     "multer": "^1.4.3"
   },
   "devDependencies": {
-    "concurrently": "^6.3.0",
+    "concurrently": "^5.3.0",
     "nodemon": "^2.0.13"
   }
 }
