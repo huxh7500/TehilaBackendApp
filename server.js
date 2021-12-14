@@ -26,13 +26,14 @@ app.use(function(req, res, next) {
   res.header("Access-Control-Allow-Headers", '*');
   next();
 });
-
+app.options('*',cors())
 app.use(cors({
   origin: '*'
 }));
 if (process.env.NODE_ENV === 'development') {
   app.use(morgan('dev'))
 }
+app.options('*',cors())
 
 app.use(express.json())
 
